@@ -214,13 +214,13 @@ const CurrencyConverter = () => {
           type="number"
           min={0}
           value={amount}
-          className="p-4 text-center bg-[#e9e9ed]"
+          className="p-4 text-center bg-[#e9e9ed] rounded-md"
           onKeyDown={handleCalc}
           onChange={(e) => setAmount(e.target.value)}
         />
         <p className="text-white">from</p>
         <select
-          className="p-4 text-center"
+          className="p-4 text-center rounded-md"
           name="from"
           id="from"
           value={from}
@@ -234,7 +234,7 @@ const CurrencyConverter = () => {
         </select>
         <p className="text-white">to</p>
         <select
-          className="p-4 text-center"
+          className="p-4 text-center rounded-md"
           name="to"
           id="to"
           value={to}
