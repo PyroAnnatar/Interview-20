@@ -181,7 +181,7 @@ const CurrencyConverter = () => {
   const [amount, setAmount] = useState(0);
   async function fetchy() {
     try {
-      const url = `http://api.exchangerate.host/live?access_key=951b8a419ed9fde1f9751f9e5acb3c8a&format=1&source=${CURRENCY_NAME_TO_CODE[from]}`;
+      const url = `https://api.exchangerate.host/live?access_key=951b8a419ed9fde1f9751f9e5acb3c8a&format=1&source=${CURRENCY_NAME_TO_CODE[from]}`;
       const response = await axios.get(url);
       setData(response.data);
       setRate(
