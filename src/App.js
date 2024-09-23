@@ -247,11 +247,17 @@ const CurrencyConverter = () => {
           ))}
         </select>
       </div>
+      <button
+        className="rounded-lg py-3 px-2 bg-[#e9e9ed] hover:bg-[#ffffff] active:bg-[#e9e9e9ec] my-4 block mx-auto"
+        onClick={fetchy}
+      >
+        Çevir
+      </button>
       <div className="font-semibold text-center mt-4 text-white">
         {rate
           ? `${amount} ${CURRENCY_NAME_TO_CODE[from]} = ${(
               rate * amount
-            ).toFixed(4)} ${CURRENCY_NAME_TO_CODE[to]}`
+            ).toFixed(2)} ${CURRENCY_NAME_TO_CODE[to]}`
           : null}
       </div>
     </div>
